@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1, 
+	"nome": "Osaka",
+	"produtos" : [
+		{
+			"id" : 1,
+			"nome" : "Rodízio Executivo",
+			"descricao" : "Rodízio Executivo",
+			"preco" : 99.00
+		}
+	]
+  },
+  {
+    "id": 2, 
+	"nome": "Halim",
+	"produtos" : [
+		{
+			"id" : 1,
+			"nome" : "Esfirra de carne aberta",
+			"descricao" : "Esfirra de carne aberta",
+			"preco" : 3.50
+		},
+		{
+			"id" : 2,
+			"nome" : "Esfirra de queijo aberta",
+			"descricao" : "Esfirra de queijo aberta",
+			"preco" : 3.50
+		},
+		{
+			"id" : 4,
+			"nome" : "Kibe Tradicional",
+			"descricao" : "Kibe Tradicional",
+			"preco" : 5.50
+		}
+	]
+  }
+]
