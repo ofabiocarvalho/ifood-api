@@ -20,8 +20,12 @@ public class RestauranteRepositoryImpl implements RestauranteRepository {
 
 		try {
 			restaurantes = objectMapper.readValue(new File(getClass().getClassLoader().getResource("restaurante-data.json").getFile()), new TypeReference<List<Restaurante>>(){});
-		} catch (Exception e) {
-			e.printStackTrace();
+		} catch (Exception ex) {
+			try {
+				restaurantes = objectMapper.readValue(new File("/app/restaurante-data.json"), new TypeReference<List<Restaurante>>(){});
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
 
 	}
